@@ -22,8 +22,10 @@ class _VideoPlayerComponentState extends State<VideoPlayerComponent> {
       ..initialize().then((_) {
         // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
         setState(() {});
-         //_controller.play();
+         _controller.play();
       });
+
+      _controller.setLooping(true);
 
      
   }
@@ -45,25 +47,31 @@ class _VideoPlayerComponentState extends State<VideoPlayerComponent> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children:[
-              Padding(
-                padding:EdgeInsets.only(bottom: 8.0),
-                child: Text(
-                  "@Username",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: .7,
+            children: [
+              GestureDetector(
+                onTap: () => print('see profile'),
+                child: const Padding(
+                  padding:EdgeInsets.only(bottom: 8.0),
+                  child: Text(
+                    "@Username",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: .7,
+                    ),
                   ),
-                  maxLines: 2,
                 ),
               ),
-              Text(
-                'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-                style: TextStyle(
-                  color: Colors.white,
-                  letterSpacing: .7,
-                  height: 1.5,
+              GestureDetector(
+                onTap: () => print('Show more'),
+                child: const Text(
+                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+                  style: TextStyle(
+                    color: Colors.white,
+                    letterSpacing: .7,
+                    height: 1.5,
+                  ),
+                  maxLines: 2,
                 ),
               )
             ],

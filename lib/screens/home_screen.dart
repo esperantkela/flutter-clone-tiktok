@@ -1,5 +1,3 @@
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:flutter/material.dart';
 import 'package:tiktok_clone/components/video_player/video_player_component.dart';
@@ -37,6 +35,8 @@ class HomeScreen extends StatelessWidget {
           );
         }).toList(),
       ),
+     
+      
     );
   }
 }
