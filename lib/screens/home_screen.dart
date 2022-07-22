@@ -38,6 +38,7 @@ class HomeScreen extends StatelessWidget {
       ),
 
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 1,
         onTap: (value){
           print(value);
         },
