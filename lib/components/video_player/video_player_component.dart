@@ -57,7 +57,7 @@ class _VideoPlayerComponentState extends State<VideoPlayerComponent> {
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      letterSpacing: .7,
+                      letterSpacing: 1.0,
                     ),
                   ),
                 ),
@@ -68,7 +68,7 @@ class _VideoPlayerComponentState extends State<VideoPlayerComponent> {
                   'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
                   style: TextStyle(
                     color: Colors.white,
-                    letterSpacing: .7,
+                    letterSpacing: 1.0,
                     height: 1.5,
                   ),
                   maxLines: 2,
