@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
-class SidebarComponent extends StatelessWidget {
-  const SidebarComponent({Key? key}) : super(key: key);
+
+class PostComponent extends StatelessWidget {
+  const PostComponent({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
