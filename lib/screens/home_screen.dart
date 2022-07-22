@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
       ),
 
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.black,
         elevation: 0,
         unselectedItemColor: Colors.white,
         selectedItemColor: Colors.amber,
@@ -50,11 +50,11 @@ class HomeScreen extends StatelessWidget {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
+            icon: Icon(Icons.add_circle_outline_outlined),
+            label: 'add',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add),
+            icon: Icon(Icons.message_outlined),
             label: 'messenger',
           ),
         ],
