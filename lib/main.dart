@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:tiktok_clone/screens/home_screen.dart';
 
 void main() {
@@ -14,8 +15,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'TikTok Clone',
       theme: ThemeData(
-  
-        primarySwatch: Colors.blue,
+        textTheme: GoogleFonts.notoSansAdlamTextTheme()
       ),
       home: HomeScreen(),
       debugShowCheckedModeBanner: false,
