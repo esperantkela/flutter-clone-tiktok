@@ -38,6 +38,9 @@ class HomeScreen extends StatelessWidget {
       ),
 
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (value){
+          print(value);
+        },
         backgroundColor: Colors.black,
         elevation: 0,
         unselectedItemColor: Colors.white,
