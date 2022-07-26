@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:tiktok_clone/components/posts/post_component.dart';
 import 'package:tiktok_clone/components/video_player/video_player_component.dart';
 
 const List<Map<String, dynamic>> data = [
@@ -31,9 +32,7 @@ class HomeScreen extends StatelessWidget {
       body:  PageView(
         scrollDirection: Axis.vertical,
         children: data.map((item){
-          return VideoPlayerComponent(
-            media: item['media'],
-          );
+          return PostComponent(item : item);
         }).toList(),
       ),
 
