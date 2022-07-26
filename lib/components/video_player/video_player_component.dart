@@ -31,53 +31,12 @@ class _VideoPlayerComponentState extends State<VideoPlayerComponent> {
   }
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        _controller.value.isInitialized
+    return _controller.value.isInitialized
               ? SizedBox(
                 width: _controller.value.size.width,
                 height: _controller.value.size.height,
                 child: VideoPlayer(_controller),
               )
-              : Container(),
-        Positioned(
-          bottom: 100.0,
-          left: 20.0,
-          right: 100.0,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              GestureDetector(
-                onTap: () => print('see profile'),
-                child: const Padding(
-                  padding:EdgeInsets.only(bottom: 8.0),
-                  child: Text(
-                    "@Username",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 1.0,
-                    ),
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () => print('Show more'),
-                child: const Text(
-                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-                  style: TextStyle(
-                    color: Colors.white,
-                    letterSpacing: 1.0,
-                    height: 1.5,
-                  ),
-                  maxLines: 2,
-                ),
-              )
-            ],
-          ),
-        )
-      ],
-    );
+              : Container();
   }
 }
