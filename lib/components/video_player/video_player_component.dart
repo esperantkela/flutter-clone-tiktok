@@ -22,10 +22,10 @@ class _VideoPlayerComponentState extends State<VideoPlayerComponent> {
       ..initialize().then((_) {
         // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
         setState(() {});
-         _controller.play();
+         //_controller.play();
       });
 
-      _controller.setLooping(true);
+     // _controller.setLooping(true);
 
      
   }

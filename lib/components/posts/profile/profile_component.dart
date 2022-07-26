@@ -3,7 +3,8 @@
 import 'package:flutter/material.dart';
 
 class ProfileComponent extends StatelessWidget {
-  const ProfileComponent({Key? key}) : super(key: key);
+  final Map<String, dynamic> item;
+  const ProfileComponent({Key? key,required this.item}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +14,11 @@ class ProfileComponent extends StatelessWidget {
             children: [
               GestureDetector(
                 onTap: () => print('see profile'),
-                child: const Padding(
+                child:  Padding(
                   padding:EdgeInsets.only(bottom: 8.0),
                   child: Text(
-                    "@Username",
-                    style: TextStyle(
+                    "@${item ['profile'] ['username']}",
+                    style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0,
@@ -27,9 +28,9 @@ class ProfileComponent extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () => print('Show more'),
-                child: const Text(
-                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-                  style: TextStyle(
+                child: Text(
+                  item['description'],
+                  style: const TextStyle(
                     color: Colors.white,
                     letterSpacing: 1.0,
                     height: 1.5,
