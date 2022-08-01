@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:tiktok_clone/components/posts/profile/profile_component.dart';
+import 'package:tiktok_clone/components/sidebar/sidebar_component.dart';
 import 'package:tiktok_clone/components/video_player/video_player_component.dart';
 
 class PostComponent extends StatelessWidget {
@@ -18,7 +19,10 @@ class PostComponent extends StatelessWidget {
           child: ProfileComponent(
             item: item,
           )
-          )
+          ),
+          Positioned(
+            child: SidebarComponent(),
+          ),
       ],
     );
   }
