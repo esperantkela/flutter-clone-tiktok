@@ -8,12 +8,25 @@ class AvatarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CircleAvatar(
-      radius: 25.0,
-      backgroundImage: AssetImage(
-        "assets/profile/profile-1.jpg",
+    return GestureDetector(
+      onTap: () => print('Mon profile'),
+      child: Container(
+        padding: const EdgeInsets.all(3.0),
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          border: Border.all(
+            width: 2,
+            color: Colors.white
+          )
+        ),
+        child: CircleAvatar(
+        radius: 25.0,
+        backgroundImage: AssetImage(
+          "assets/profile/profile-1.jpg",
+        )
+    
       )
-
+      ),
     );
   }
 }
