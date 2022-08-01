@@ -6,7 +6,8 @@ import 'package:tiktok_clone/components/video_player/video_player_component.dart
 const List<Map<String, dynamic>> data = [
   {
     "profile":{
-      "username" : 'esperantkela'
+      "username" : 'esperantkela',
+      "avatar" : 'assets/profile/profile-1.jpg'
     },
 
     "media" : "assets/videos/video-1.mp4",
@@ -14,7 +15,8 @@ const List<Map<String, dynamic>> data = [
   },
    {
     "profile":{
-      "username" : 'johndoe'
+      "username" : 'johndoe',
+      "avatar" : 'assets/profile/profile-1.jpg'
     },
 
     "media" : "assets/videos/video-2.mp4",
