@@ -8,25 +8,43 @@ class AvatarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => print('Mon profile'),
-      child: Container(
-        padding: const EdgeInsets.all(3.0),
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          border: Border.all(
-            width: 2,
-            color: Colors.white
+    return Stack(
+      alignment: Alignment.bottomCenter,
+      children: [
+        Padding(
+          padding: EdgeInsets.only(bottom: 12.0),
+          child: GestureDetector(
+          onTap: () => print('See profile'),
+          child: Container(
+            padding: const EdgeInsets.all(3.0),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(
+                width: 2,
+                color: Colors.white
+              )
+            ),
+            child: CircleAvatar(
+            radius: 25.0,
+            backgroundImage: AssetImage(
+              "assets/profile/profile-1.jpg",
+            )
           )
+          ),
+              ),
         ),
+      GestureDetector(
+        onTap: () => print('add profile'),
         child: CircleAvatar(
-        radius: 25.0,
-        backgroundImage: AssetImage(
-          "assets/profile/profile-1.jpg",
-        )
-    
-      )
+          radius: 15.0,
+          backgroundColor: Colors.pink,
+          child: Icon(
+            Icons.add,
+            size: 20.0,
+          ),
+        ),
       ),
+      ],
     );
   }
 }
