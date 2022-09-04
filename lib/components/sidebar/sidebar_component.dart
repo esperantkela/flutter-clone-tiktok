@@ -7,8 +7,13 @@ class SidebarComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
-        AvatarWidget(),
+      children: const [
+        Padding(
+          padding: EdgeInsets.only(
+            bottom: 20.0
+          ),
+          child: AvatarWidget()
+          ),
         LikeWidget(),
       ],
     );

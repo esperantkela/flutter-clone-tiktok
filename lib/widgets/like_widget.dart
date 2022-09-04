@@ -15,17 +15,15 @@ class LikeWidget extends StatelessWidget {
           sigmaY: 10.0
         ),
         child: Container(
-          height: 40.0,
-          width: 40.0,
-          color: Colors.pink,
-          child: const Center(
-            child: Text(
-              "1.5k",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 16.0
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: Colors.white.withOpacity(0.1)
+          ),
+          child:  Center(
+            child: IconButton(
+              onPressed: (){} ,
+              icon: const Icon(Icons.favorite_border_rounded)
               ),
-            ),
           ),
         ),
       ),
