@@ -22,7 +22,8 @@ class LikeWidget extends StatelessWidget {
           child:  Center(
             child: IconButton(
               onPressed: (){} ,
-              icon: const Icon(Icons.favorite_border_rounded)
+              icon: const Icon(Icons.favorite_border_rounded),
+              color: Colors.white,
               ),
           ),
         ),
