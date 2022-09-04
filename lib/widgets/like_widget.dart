@@ -6,9 +6,21 @@ class LikeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-      onPressed: null, 
-      icon: Icon(Icons.favorite_border_outlined)
+    return ClipOval(
+      child: Container(
+        height: 40.0,
+        width: 40.0,
+        color: Colors.red,
+        child: const Center(
+          child: Text(
+            "1.5k",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 16.0
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
