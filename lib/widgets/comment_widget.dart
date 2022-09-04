@@ -39,7 +39,7 @@ class CommentWidget extends StatelessWidget {
           ),
         ),
         Text(
-          NumberFormat.compact().format(count),
+          count.toString(),
           style: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
