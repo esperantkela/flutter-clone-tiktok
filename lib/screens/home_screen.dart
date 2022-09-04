@@ -7,7 +7,8 @@ const List<Map<String, dynamic>> data = [
   {
     "profile":{
       "username" : 'esperantkela',
-      "avatar" : 'assets/profile/profile-1.jpg'
+      "avatar" : 'assets/profile/profile-1.jpg',
+      
     },
 
     "media" : "assets/videos/video-1.mp4",
