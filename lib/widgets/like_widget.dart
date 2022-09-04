@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class LikeWidget extends StatelessWidget {
-  const LikeWidget({Key? key}) : super(key: key);
+  final int count;
+  const LikeWidget({Key? key, required this.count}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -37,9 +38,9 @@ class LikeWidget extends StatelessWidget {
             ),
           ),
         ),
-        const Text(
-          "1.6K",
-          style: TextStyle(
+        Text(
+          count.toString(),
+          style: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
             letterSpacing: .8

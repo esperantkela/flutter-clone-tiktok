@@ -22,9 +22,13 @@ class SidebarComponent extends StatelessWidget {
           padding: EdgeInsets.only(
             bottom: 20.0
           ),
-          child: LikeWidget()
+          child: LikeWidget(
+            count : item['likeCount']
+          )
         ),
-        CommentWidget()
+        CommentWidget(
+          count : item['commentCount']
+        )
       ],
     );
   }
