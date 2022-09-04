@@ -12,16 +12,20 @@ const List<Map<String, dynamic>> data = [
     },
 
     "media" : "assets/videos/video-1.mp4",
-    "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "likeCount" : 11500,
+    "commentCount" : 650,
   },
    {
     "profile":{
       "username" : 'johndoe',
-      "avatar" : 'assets/profile/profile-1.jpg'
+      "avatar" : 'assets/profile/profile-2.JPG'
     },
 
     "media" : "assets/videos/video-2.mp4",
-    "description" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "description" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "likeCount" : 21000,
+    "commentCount" : 950,
   }
 ];
 

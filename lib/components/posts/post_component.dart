@@ -23,7 +23,9 @@ class PostComponent extends StatelessWidget {
           Positioned(
             bottom : 100.0,
             right : 40.0,
-            child: SidebarComponent(),
+            child: SidebarComponent(
+              item : item
+            ),
           ),
       ],
     );
